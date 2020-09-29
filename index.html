@@ -1,0 +1,154 @@
+<!--The Main File-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <main class="container">
+ 
+        <!-- Left Column  -->
+        <div class="left-column">          
+            <img class="active" src="image/nike1.jpg"> 
+                <div class="small-img-row"> 
+                    <img src="image/nike2.jpg" > 
+                    <img src="image/nike3.jpeg" > 
+                    <img src="image/nike4.jpeg" > 
+                </div> 
+        </div>
+
+        <!--Middle Column-->
+        <div class="middle-column">
+
+          <!-- Product Description -->
+          <div class="product-description">
+            <h1>Nike Air Jordan</h1>
+            <h3>Price: $145</h3>
+            <h3>Rating:<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></h3>
+            <p>Product Details</p>
+            <p>Supplied by a premier sneaker marketplace dealing with unworn, already sold out, in demand rarities. Each product is rigorously inspected by experienced experts guaranteeing authenticity. The women's Air Jordan 1 High "UNC Patent…</p>
+          </div>
+        </div>
+
+        <!--Right Column-->
+        <div class="right-column">
+            <h1>Direct Me!</h1>
+            <img src="./image/map.png" >
+             <h3>Store Address: Aeon Mall2, 1003, Phnom Penh.</h3>
+        </div>
+       
+    </main>
+<style>
+.checked {
+  color:#FFCE00;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif ;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+/* Columns */
+.left-column {
+  width: 35%;
+  position: relative;
+  font-family:"Trebuchet MS", Helvetica, sans-serif ;
+}
+.middle-column{
+    width: 30%;
+    font-family:"Trebuchet MS", Helvetica, sans-serif ;
+}
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+  padding: 0px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif ;
+}
+.right-column h1{
+  border-radius: 25px;
+  background: #C9DFFD ;
+  padding: 20px; 
+  width: 200px;
+  height: 20px;  
+  font-weight: 300;
+  font-size: 25px;
+  color: #43484D;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-top: 0%;
+  margin-left: 35%;
+}
+.right-column h3{
+    margin-left: 16%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+.right-column img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    padding-left: 70px;
+}
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.left-column .active{
+  opacity: 1;
+  width: 400px;
+  height: 400px;
+}
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+}
+.small-img-row{
+    width: 100px;
+    height: 50px;
+}
+
+</style>
+</body>
+</html>

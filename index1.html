@@ -1,0 +1,37 @@
+<!--Testing the picture clicking-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-column">
+        <div class="row">
+            <div class="col-2">
+                <img src="./image/nike1.jpg" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col"><img src="./image/nike2.jpg" width="100%" class="small-img"></div>
+                    <div class="small-img-col"><img src="./image/nike3.jpeg" width="100%" class="small-img"></div>
+                    <div class="small-img-col"><img src="./image/nike4.jpeg" width="100%" class="small-img"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var ProductImg = document.getElementById("productImg");
+            var SmallImg = document.getElementsByClassName("small-img");
+            
+            SmallImg[0].onclick = function(){
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function(){
+            ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function(){
+            ProductImg.src = SmallImg[2].src;
+            }
+        </script>
+</body>
+</html>
